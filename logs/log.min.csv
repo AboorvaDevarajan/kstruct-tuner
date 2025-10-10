@@ -1,0 +1,382 @@
+Process_Name,Process_ID,CPU_ID,Timestamp,Runqueue_CPU,Field,Function,Access_Type,Data_Type,Attributes,Offset,Size (Bytes)
+perf,8472,111,316.808102,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+perf,8472,111,316.808112,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+perf,8472,111,316.808113,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+perf,8472,111,316.808114,111,scratch_mask,__set_cpus_allowed_ptr,access,cpumask_var_t,,3624,256
+perf,8472,111,316.808114,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+perf,8472,111,316.808115,111,clock_update_flags,update_rq_clock,modify,unsigned int,,2632,4
+perf,8472,111,316.808115,111,cpu,update_rq_clock,access,int,,2856,4
+perf,8472,111,316.808116,111,clock,update_rq_clock,access,u64,,2640,8
+perf,8472,111,316.808117,111,clock,update_rq_clock,modify,u64,,2640,8
+perf,8472,111,316.808117,111,clock_task,update_rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808118,111,curr,update_rq_clock_pelt,access,struct task_struct *,,2592,8
+perf,8472,111,316.808118,111,cpu,update_rq_clock_pelt,access,int,,2856,4
+perf,8472,111,316.808119,111,clock_pelt,update_rq_clock_pelt,modify,u64,,2696,8
+perf,8472,111,316.808121,111,curr,task_current,access,struct task_struct *,,2592,8
+perf,8472,111,316.808122,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+perf,8472,111,316.808123,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808123,111,cfs,dequeue_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808124,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808125,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808126,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808127,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808127,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808128,111,cfs,cfs_rq_util_change,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808129,111,nr_numa_running,account_numa_dequeue,modify,unsigned int,,8,4
+perf,8472,111,316.808129,111,nr_preferred_running,account_numa_dequeue,modify,unsigned int,,12,4
+perf,8472,111,316.80813,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808131,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808132,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808132,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808133,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808133,111,cfs,cfs_rq_util_change,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808134,111,cpu,cpufreq_update_util,access,int,,2856,4
+perf,8472,111,316.808135,111,nr_running,sub_nr_running,modify,unsigned int,,4,4
+perf,8472,111,316.808135,111,cpu,sched_update_tick_dependency,access,int,,2856,4
+perf,8472,111,316.808136,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+perf,8472,111,316.808137,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808137,111,curr,hrtick_update,access,struct task_struct *,,2592,8
+perf,8472,111,316.808138,111,curr,put_prev_task,access,struct task_struct *,,2592,8
+perf,8472,111,316.808139,111,cfs,enqueue_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.80814,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.80814,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808141,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808142,111,cfs_tasks,account_entity_enqueue,access,struct list_head,,2864,16
+perf,8472,111,316.808142,111,nr_preferred_running,account_numa_enqueue,modify,unsigned int,,12,4
+perf,8472,111,316.808143,111,cpu,list_add_leaf_cfs_rq,access,int,,2856,4
+perf,8472,111,316.808143,111,leaf_cfs_rq_list,list_add_leaf_cfs_rq,access,struct list_head,,2560,16
+perf,8472,111,316.808144,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808145,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808145,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808146,111,cpu,list_add_leaf_cfs_rq,access,int,,2856,4
+perf,8472,111,316.808147,111,leaf_cfs_rq_list,list_add_leaf_cfs_rq,access,struct list_head,,2560,16
+perf,8472,111,316.808147,111,nr_running,add_nr_running,modify,unsigned int,,4,4
+perf,8472,111,316.808148,111,cpu,sched_update_tick_dependency,access,int,,2856,4
+perf,8472,111,316.808148,111,tmp_alone_branch,assert_list_leaf_cfs_rq,access,struct list_head *,,2576,8
+perf,8472,111,316.808149,111,leaf_cfs_rq_list,assert_list_leaf_cfs_rq,access,struct list_head,,2560,16
+perf,8472,111,316.808149,111,curr,hrtick_update,access,struct task_struct *,,2592,8
+perf,8472,111,316.80815,111,cfs_tasks,set_next_task_fair,access,struct list_head,,2864,16
+perf,8472,111,316.808151,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808151,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808152,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808152,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808153,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808153,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808154,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808154,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808155,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808156,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808157,111,push_busy,affine_move_task,access,unsigned int,,3572,4
+perf,8472,111,316.808158,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+perf,8472,111,316.808332,111,rd,select_task_rq_fair,access,struct root_domain *,,2752,8
+perf,8472,111,316.808395,111,curr,__schedule,access,struct task_struct *,,2592,8
+perf,8472,111,316.808396,111,sched_count,schedule_debug,modify,unsigned int,,3540,4
+perf,8472,111,316.808396,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+perf,8472,111,316.808397,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+perf,8472,111,316.808398,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+perf,8472,111,316.808398,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+perf,8472,111,316.808399,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+perf,8472,111,316.808399,111,clock_update_flags,update_rq_clock,modify,unsigned int,,2632,4
+perf,8472,111,316.8084,111,cpu,update_rq_clock,access,int,,2856,4
+perf,8472,111,316.8084,111,clock,update_rq_clock,access,u64,,2640,8
+perf,8472,111,316.808401,111,clock,update_rq_clock,modify,u64,,2640,8
+perf,8472,111,316.808401,111,clock_task,update_rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808402,111,curr,update_rq_clock_pelt,access,struct task_struct *,,2592,8
+perf,8472,111,316.808403,111,cpu,update_rq_clock_pelt,access,int,,2856,4
+perf,8472,111,316.808403,111,clock_pelt,update_rq_clock_pelt,modify,u64,,2696,8
+perf,8472,111,316.808404,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+perf,8472,111,316.808404,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+perf,8472,111,316.808405,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808405,111,cfs,dequeue_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808406,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808406,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808407,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808408,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808408,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808409,111,cfs,cfs_rq_util_change,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.80841,111,nr_numa_running,account_numa_dequeue,modify,unsigned int,,8,4
+perf,8472,111,316.80841,111,nr_preferred_running,account_numa_dequeue,modify,unsigned int,,12,4
+perf,8472,111,316.808411,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808411,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808412,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808412,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808413,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808414,111,cfs,cfs_rq_util_change,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808414,111,cpu,cpufreq_update_util,access,int,,2856,4
+perf,8472,111,316.808415,111,nr_running,sub_nr_running,modify,unsigned int,,4,4
+perf,8472,111,316.808416,111,cpu,sched_update_tick_dependency,access,int,,2856,4
+perf,8472,111,316.808417,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+perf,8472,111,316.808417,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808418,111,curr,hrtick_update,access,struct task_struct *,,2592,8
+perf,8472,111,316.808418,111,nr_running,__pick_next_task,accesss,unsigned int,,4,4
+perf,8472,111,316.808419,111,cfs,__pick_next_task,accesss,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.80842,111,cfs,pick_next_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.80842,111,cfs,sched_fair_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.808421,111,cpu,sched_balance_newidle,access,int,,2856,4
+perf,8472,111,316.808422,111,cpu,update_misfit_status,access,int,,2856,4
+perf,8472,111,316.808422,111,ttwu_pending,sched_balance_newidle,access,unsigned int,,104,4
+perf,8472,111,316.808423,111,idle_stamp,sched_balance_newidle,modify,u64,,3328,8
+perf,8472,111,316.808423,111,clock,rq_clock,modify,u64,,2640,8
+perf,8472,111,316.808424,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808425,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+perf,8472,111,316.808425,111,sd,sched_balance_newidle,access,struct sched_domain *,,2760,8
+perf,8472,111,316.808426,111,rd,sched_balance_newidle,access,struct root_domain *,,2752,8
+perf,8472,111,316.808427,111,avg_idle,sched_balance_newidle,access,u64,,3336,8
+perf,8472,111,316.808427,111,next_balance,sched_balance_newidle,access,long unsigned int,,2616,8
+perf,8472,111,316.808428,111,cpu,nohz_newidle_balance,access,int,,2856,4
+perf,8472,111,316.808428,111,avg_idle,nohz_newidle_balance,access,u64,,3336,8
+perf,8472,111,316.808429,111,clock_update_flags,rq_repin_lock,modify,unsigned int,,2632,4
+perf,8472,111,316.80843,111,cfs,update_idle_rq_clock_pelt,access,struct cfs_rq,((__aligned__(128))),128,640
+perf,8472,111,316.80843,111,avg_rt,update_idle_rq_clock_pelt,access,struct sched_avg,((__aligned__(128))),2944,128
+perf,8472,111,316.808431,111,avg_dl,update_idle_rq_clock_pelt,access,struct sched_avg,,3072,128
+perf,8472,111,316.808432,111,clock_pelt,_update_idle_rq_clock_pelt,modify,u64,,2696,8
+perf,8472,111,316.808432,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+perf,8472,111,316.808433,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808434,111,clock_idle,_update_idle_rq_clock_pelt,modify,u64,,2720,8
+perf,8472,111,316.808434,111,clock,rq_clock,modify,u64,,2640,8
+perf,8472,111,316.808435,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808436,111,clock_pelt_idle,_update_idle_rq_clock_pelt,modify,u64,,2712,8
+perf,8472,111,316.808436,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808437,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+perf,8472,111,316.808437,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+perf,8472,111,316.808438,111,curr,put_prev_task,access,struct task_struct *,,2592,8
+perf,8472,111,316.80844,111,cpu,__update_idle_core,access,int,,2856,4
+perf,8472,111,316.808444,111,last_seen_need_resched_ns,__schedule,modify,u64,,2736,8
+perf,8472,111,316.808445,111,nr_switches,__schedule,modify,u64,,112,8
+perf,8472,111,316.808445,111,curr,__schedule,modify,struct task_struct *,,2592,8
+perf,8472,111,316.808446,111,cpu,migrate_disable_switch,access,int,,2856,4
+perf,8472,111,316.808447,111,clock,rq_clock,modify,u64,,2640,8
+perf,8472,111,316.808448,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+perf,8472,111,316.808449,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+swapper,0,111,316.80845,111,prev_mm,finish_task_switch,access,struct mm_struct *,,2624,8
+swapper,0,111,316.808451,111,prev_mm,finish_task_switch,modify,struct mm_struct *,,2624,8
+swapper,0,111,316.808452,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.808574,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.808696,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.808819,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.808941,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.809063,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.809185,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.809307,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.809429,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,316.809431,111,has_blocked_load,nohz_balance_enter_idle,modify,unsigned int,,32,4
+swapper,0,111,316.809431,111,nohz_tick_stopped,nohz_balance_enter_idle,access,unsigned int,,96,4
+swapper,0,111,316.809432,111,sd,on_null_domain,access,struct sched_domain *,,2760,8
+swapper,0,111,316.809433,111,nohz_tick_stopped,nohz_balance_enter_idle,access,unsigned int,,96,4
+swapper,0,111,317.621428,111,nr_iowait,nr_iowait_cpu,access,atomic_t,,2728,4
+swapper,0,111,317.62143,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+swapper,0,111,317.621431,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+swapper,0,111,317.621432,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+swapper,0,111,317.621432,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+swapper,0,111,317.621433,111,clock_update_flags,update_rq_clock,modify,unsigned int,,2632,4
+swapper,0,111,317.621434,111,cpu,update_rq_clock,access,int,,2856,4
+swapper,0,111,317.621434,111,clock,update_rq_clock,access,u64,,2640,8
+swapper,0,111,317.621435,111,clock,update_rq_clock,modify,u64,,2640,8
+swapper,0,111,317.621435,111,clock_task,update_rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+swapper,0,111,317.621436,111,curr,update_rq_clock_pelt,access,struct task_struct *,,2592,8
+swapper,0,111,317.621437,111,clock_pelt,_update_idle_rq_clock_pelt,modify,u64,,2696,8
+swapper,0,111,317.621437,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+swapper,0,111,317.621438,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621439,111,clock_idle,_update_idle_rq_clock_pelt,modify,u64,,2720,8
+swapper,0,111,317.621439,111,clock,rq_clock,modify,u64,,2640,8
+swapper,0,111,317.62144,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.62144,111,clock_pelt_idle,_update_idle_rq_clock_pelt,modify,u64,,2712,8
+swapper,0,111,317.621441,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621442,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+swapper,0,111,317.621442,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+swapper,0,111,317.621443,111,cpu,sched_ttwu_pending,access,int,,2856,4
+swapper,0,111,317.621444,111,clock,rq_clock,modify,u64,,2640,8
+swapper,0,111,317.621444,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621446,111,cfs,enqueue_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+swapper,0,111,317.621447,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621447,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+swapper,0,111,317.621448,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+swapper,0,111,317.621449,111,cfs,cfs_rq_util_change,access,struct cfs_rq,((__aligned__(128))),128,640
+swapper,0,111,317.621449,111,cpu,cpufreq_update_util,access,int,,2856,4
+swapper,0,111,317.62145,111,cfs_tasks,account_entity_enqueue,access,struct list_head,,2864,16
+swapper,0,111,317.621451,111,nr_preferred_running,account_numa_enqueue,modify,unsigned int,,12,4
+swapper,0,111,317.621451,111,cpu,list_add_leaf_cfs_rq,access,int,,2856,4
+swapper,0,111,317.621452,111,leaf_cfs_rq_list,list_add_leaf_cfs_rq,access,struct list_head,,2560,16
+swapper,0,111,317.621453,111,nr_running,add_nr_running,modify,unsigned int,,4,4
+swapper,0,111,317.621453,111,cpu,sched_update_tick_dependency,access,int,,2856,4
+swapper,0,111,317.621454,111,rd,check_update_overutilized_status,access,struct root_domain *,,2752,8
+swapper,0,111,317.621454,111,cpu,check_update_overutilized_status,access,int,,2856,4
+swapper,0,111,317.621455,111,tmp_alone_branch,assert_list_leaf_cfs_rq,access,struct list_head *,,2576,8
+swapper,0,111,317.621456,111,leaf_cfs_rq_list,assert_list_leaf_cfs_rq,access,struct list_head,,2560,16
+swapper,0,111,317.621457,111,curr,hrtick_update,access,struct task_struct *,,2592,8
+swapper,0,111,317.621457,111,curr,wakeup_preempt,access,struct task_struct *,,2592,8
+swapper,0,111,317.621458,111,curr,wakeup_preempt,access,struct task_struct *,,2592,8
+swapper,0,111,317.621458,111,curr,resched_curr,access,struct task_struct *,,2592,8
+swapper,0,111,317.621459,111,cpu,resched_curr,access,int,,2856,4
+swapper,0,111,317.621459,111,curr,wakeup_preempt,access,struct task_struct *,,2592,8
+swapper,0,111,317.62146,111,clock_update_flags,rq_clock_skip_update,modify,unsigned int,,2632,4
+swapper,0,111,317.621461,111,idle_stamp,ttwu_do_activate,access,u64,,3328,8
+swapper,0,111,317.621461,111,idle_stamp,ttwu_do_activate,access,u64,,3328,8
+swapper,0,111,317.621462,111,clock,rq_clock,modify,u64,,2640,8
+swapper,0,111,317.621462,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621463,111,max_idle_balance_cost,ttwu_do_activate,access,u64,,3344,8
+swapper,0,111,317.621463,111,avg_idle,ttwu_do_activate,modify,u64,,3336,8
+swapper,0,111,317.621463,111,avg_idle,ttwu_do_activate,access,u64,,3336,8
+swapper,0,111,317.621464,111,avg_idle,ttwu_do_activate,modify,u64,,3336,8
+swapper,0,111,317.621464,111,idle_stamp,ttwu_do_activate,modify,u64,,3328,8
+swapper,0,111,317.621465,111,ttwu_pending,sched_ttwu_pending,modify,unsigned int,,104,4
+swapper,0,111,317.621465,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+swapper,0,111,317.621467,111,curr,idle_cpu,access,struct task_struct *,,2592,8
+swapper,0,111,317.621467,111,idle,idle_cpu,access,struct task_struct *,,2600,8
+swapper,0,111,317.621468,111,nr_running,idle_cpu,access,unsigned int,,4,4
+swapper,0,111,317.621469,111,curr,__schedule,access,struct task_struct *,,2592,8
+swapper,0,111,317.62147,111,sched_count,schedule_debug,modify,unsigned int,,3540,4
+swapper,0,111,317.62147,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+swapper,0,111,317.621471,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+swapper,0,111,317.621472,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+swapper,0,111,317.621473,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+swapper,0,111,317.621473,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+swapper,0,111,317.621474,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+swapper,0,111,317.621474,111,nr_running,__pick_next_task,accesss,unsigned int,,4,4
+swapper,0,111,317.621475,111,cfs,__pick_next_task,accesss,struct cfs_rq,((__aligned__(128))),128,640
+swapper,0,111,317.621475,111,cfs,pick_next_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+swapper,0,111,317.621476,111,cfs,sched_fair_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+swapper,0,111,317.621476,111,curr,put_prev_task,access,struct task_struct *,,2592,8
+swapper,0,111,317.621477,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621477,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+swapper,0,111,317.621478,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+swapper,0,111,317.621478,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+swapper,0,111,317.621479,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621479,111,cfs_tasks,pick_next_task_fair,access,struct list_head,,2864,16
+swapper,0,111,317.62148,111,cpu,update_misfit_status,access,int,,2856,4
+swapper,0,111,317.621481,111,cpu,sched_fair_update_stop_tick,access,int,,2856,4
+swapper,0,111,317.621481,111,last_seen_need_resched_ns,__schedule,modify,u64,,2736,8
+swapper,0,111,317.621482,111,nr_switches,__schedule,modify,u64,,112,8
+swapper,0,111,317.621482,111,curr,__schedule,modify,struct task_struct *,,2592,8
+swapper,0,111,317.621483,111,cpu,migrate_disable_switch,access,int,,2856,4
+swapper,0,111,317.621484,111,clock,rq_clock,modify,u64,,2640,8
+swapper,0,111,317.621484,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+swapper,0,111,317.621485,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621486,111,prev_mm,finish_task_switch,access,struct mm_struct *,,2624,8
+kworker/111:1-m,1153,111,317.621487,111,prev_mm,finish_task_switch,modify,struct mm_struct *,,2624,8
+kworker/111:1-m,1153,111,317.621496,111,curr,__schedule,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621497,111,sched_count,schedule_debug,modify,unsigned int,,3540,4
+kworker/111:1-m,1153,111,317.621497,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+kworker/111:1-m,1153,111,317.621498,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621498,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+kworker/111:1-m,1153,111,317.621499,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.6215,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.6215,111,clock_update_flags,update_rq_clock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621501,111,cpu,update_rq_clock,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621501,111,clock,update_rq_clock,access,u64,,2640,8
+kworker/111:1-m,1153,111,317.621502,111,clock,update_rq_clock,modify,u64,,2640,8
+kworker/111:1-m,1153,111,317.621503,111,clock_task,update_rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+kworker/111:1-m,1153,111,317.621503,111,curr,update_rq_clock_pelt,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621504,111,cpu,update_rq_clock_pelt,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621504,111,clock_pelt,update_rq_clock_pelt,modify,u64,,2696,8
+kworker/111:1-m,1153,111,317.621505,111,clock_update_flags,__schedule,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621505,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621506,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621507,111,cfs,dequeue_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621507,111,clock_task,rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+kworker/111:1-m,1153,111,317.621508,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621508,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621509,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+kworker/111:1-m,1153,111,317.62151,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+kworker/111:1-m,1153,111,317.62151,111,nr_numa_running,account_numa_dequeue,modify,unsigned int,,8,4
+kworker/111:1-m,1153,111,317.621511,111,nr_preferred_running,account_numa_dequeue,modify,unsigned int,,12,4
+kworker/111:1-m,1153,111,317.621512,111,nr_running,sub_nr_running,modify,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621512,111,cpu,sched_update_tick_dependency,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621513,111,nr_running,sched_idle_rq,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621513,111,cfs,sched_idle_rq,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621514,111,curr,hrtick_update,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621514,111,nr_running,__pick_next_task,accesss,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621515,111,cfs,__pick_next_task,accesss,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621515,111,cfs,pick_next_task_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621516,111,cfs,sched_fair_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621517,111,cpu,sched_balance_newidle,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621517,111,cpu,update_misfit_status,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621518,111,ttwu_pending,sched_balance_newidle,access,unsigned int,,104,4
+kworker/111:1-m,1153,111,317.621518,111,idle_stamp,sched_balance_newidle,modify,u64,,3328,8
+kworker/111:1-m,1153,111,317.621519,111,clock,rq_clock,modify,u64,,2640,8
+kworker/111:1-m,1153,111,317.621519,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.62152,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.62152,111,sd,sched_balance_newidle,access,struct sched_domain *,,2760,8
+kworker/111:1-m,1153,111,317.621521,111,rd,sched_balance_newidle,access,struct root_domain *,,2752,8
+kworker/111:1-m,1153,111,317.621521,111,avg_idle,sched_balance_newidle,access,u64,,3336,8
+kworker/111:1-m,1153,111,317.621522,111,__lock,raw_spin_rq_lock_nested,access,raw_spinlock_t,,0,4
+kworker/111:1-m,1153,111,317.621523,111,clock_update_flags,rq_pin_lock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621524,111,balance_callback,rq_pin_lock,access,struct balance_callback *,,2776,8
+kworker/111:1-m,1153,111,317.621524,111,last_blocked_load_update_tick,update_blocked_load_tick,modify,long unsigned int,,24,8
+kworker/111:1-m,1153,111,317.621525,111,clock_update_flags,update_rq_clock,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621526,111,clock_update_flags,update_rq_clock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621526,111,cpu,update_rq_clock,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621527,111,clock,update_rq_clock,access,u64,,2640,8
+kworker/111:1-m,1153,111,317.621527,111,clock,update_rq_clock,modify,u64,,2640,8
+kworker/111:1-m,1153,111,317.621528,111,clock_task,update_rq_clock_task,modify,u64,((__aligned__(128))),2688,8
+kworker/111:1-m,1153,111,317.621528,111,curr,update_rq_clock_pelt,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621529,111,cpu,update_rq_clock_pelt,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621529,111,clock_pelt,update_rq_clock_pelt,modify,u64,,2696,8
+kworker/111:1-m,1153,111,317.62153,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.62153,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+kworker/111:1-m,1153,111,317.621531,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+kworker/111:1-m,1153,111,317.621532,111,curr,__update_blocked_others,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621532,111,cpu,__update_blocked_others,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621533,111,avg_rt,update_rt_rq_load_avg,access,struct sched_avg,((__aligned__(128))),2944,128
+kworker/111:1-m,1153,111,317.621533,111,avg_dl,update_dl_rq_load_avg,access,struct sched_avg,,3072,128
+kworker/111:1-m,1153,111,317.621534,111,cpu,update_irq_load_avg,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621535,111,cpu,update_irq_load_avg,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621535,111,clock,update_irq_load_avg,access,u64,,2640,8
+kworker/111:1-m,1153,111,317.621536,111,avg_irq,update_irq_load_avg,access,struct sched_avg,,3200,128
+kworker/111:1-m,1153,111,317.621536,111,clock,update_irq_load_avg,access,u64,,2640,8
+kworker/111:1-m,1153,111,317.621537,111,avg_irq,update_irq_load_avg,access,struct sched_avg,,3200,128
+kworker/111:1-m,1153,111,317.621537,111,avg_irq,update_irq_load_avg,access,struct sched_avg,,3200,128
+kworker/111:1-m,1153,111,317.621538,111,avg_rt,cpu_util_rt,access,struct sched_avg,((__aligned__(128))),2944,128
+kworker/111:1-m,1153,111,317.621539,111,avg_dl,cpu_util_dl,access,struct sched_avg,,3072,128
+kworker/111:1-m,1153,111,317.621539,111,avg_irq,cpu_util_irq,access,struct sched_avg,,3200,128
+kworker/111:1-m,1153,111,317.62154,111,leaf_cfs_rq_list,__update_blocked_fair,access,struct list_head,,2560,16
+kworker/111:1-m,1153,111,317.62154,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621541,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+kworker/111:1-m,1153,111,317.621541,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+kworker/111:1-m,1153,111,317.621542,111,cfs,__update_blocked_fair,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621543,111,clock_update_flags,assert_clock_updated,access,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621543,111,clock_pelt,rq_clock_pelt,access,u64,,2696,8
+kworker/111:1-m,1153,111,317.621544,111,lost_idle_time,rq_clock_pelt,access,long unsigned int,,2704,8
+kworker/111:1-m,1153,111,317.621544,111,has_blocked_load,update_blocked_load_status,modify,unsigned int,,32,4
+kworker/111:1-m,1153,111,317.621545,111,cpu,cpufreq_update_util,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621545,111,clock_update_flags,rq_unpin_lock,modify,unsigned int,,2632,4
+kworker/111:1-m,1153,111,317.621546,111,avg_idle,sched_balance_newidle,access,u64,,3336,8
+kworker/111:1-m,1153,111,317.621547,111,nr_running,should_we_balance,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621547,111,ttwu_pending,should_we_balance,access,unsigned int,,104,4
+kworker/111:1-m,1153,111,317.621548,111,cfs,cpu_load,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621549,111,cpu,cpu_util,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621549,111,cfs,cpu_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.62155,111,cfs,update_sg_lb_stats,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.62155,111,nr_running,update_sg_lb_stats,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621551,111,nr_numa_running,update_sg_lb_stats,access,unsigned int,,8,4
+kworker/111:1-m,1153,111,317.621551,111,nr_preferred_running,update_sg_lb_stats,access,unsigned int,,12,4
+kworker/111:1-m,1153,111,317.621552,111,curr,idle_cpu,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621553,111,idle,idle_cpu,access,struct task_struct *,,2600,8
+kworker/111:1-m,1153,111,317.621571,111,rd,sched_balance_find_src_group,access,struct root_domain *,,2752,8
+kworker/111:1-m,1153,111,317.621572,111,pd,sched_balance_find_src_group,access,,,,
+kworker/111:1-m,1153,111,317.621573,111,avg_idle,sched_balance_newidle,access,u64,,3336,8
+kworker/111:1-m,1153,111,317.621574,111,nr_running,should_we_balance,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621574,111,ttwu_pending,should_we_balance,access,unsigned int,,104,4
+kworker/111:1-m,1153,111,317.621589,111,cfs,cpu_load,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.62159,111,cpu,cpu_util,access,int,,2856,4
+kworker/111:1-m,1153,111,317.62159,111,cfs,cpu_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621591,111,cfs,update_sg_lb_stats,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621592,111,nr_running,update_sg_lb_stats,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621592,111,nr_numa_running,update_sg_lb_stats,access,unsigned int,,8,4
+kworker/111:1-m,1153,111,317.621593,111,nr_preferred_running,update_sg_lb_stats,access,unsigned int,,12,4
+kworker/111:1-m,1153,111,317.621593,111,curr,idle_cpu,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621594,111,idle,idle_cpu,access,struct task_struct *,,2600,8
+kworker/111:1-m,1153,111,317.621708,111,rd,sched_balance_find_src_group,access,struct root_domain *,,2752,8
+kworker/111:1-m,1153,111,317.621709,111,pd,sched_balance_find_src_group,access,,,,
+kworker/111:1-m,1153,111,317.621709,111,avg_idle,sched_balance_newidle,access,u64,,3336,8
+kworker/111:1-m,1153,111,317.62171,111,nr_running,should_we_balance,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.62171,111,ttwu_pending,should_we_balance,access,unsigned int,,104,4
+kworker/111:1-m,1153,111,317.621743,111,cfs,cpu_load,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621744,111,cpu,cpu_util,access,int,,2856,4
+kworker/111:1-m,1153,111,317.621744,111,cfs,cpu_runnable,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621745,111,cfs,update_sg_lb_stats,access,struct cfs_rq,((__aligned__(128))),128,640
+kworker/111:1-m,1153,111,317.621745,111,nr_running,update_sg_lb_stats,access,unsigned int,,4,4
+kworker/111:1-m,1153,111,317.621746,111,nr_numa_running,update_sg_lb_stats,access,unsigned int,,8,4
+kworker/111:1-m,1153,111,317.621746,111,nr_preferred_running,update_sg_lb_stats,access,unsigned int,,12,4
+kworker/111:1-m,1153,111,317.621747,111,curr,idle_cpu,access,struct task_struct *,,2592,8
+kworker/111:1-m,1153,111,317.621747,111,idle,idle_cpu,access,struct task_struct *,,2600,8

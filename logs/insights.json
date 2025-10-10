@@ -1,0 +1,1303 @@
+{
+  "reordered_fields": [
+    "__lock",
+    "avg_dl",
+    "avg_idle",
+    "avg_irq",
+    "avg_rt",
+    "balance_callback",
+    "cfs",
+    "cfs_tasks",
+    "clock",
+    "clock_idle",
+    "clock_pelt",
+    "clock_pelt_idle",
+    "clock_task",
+    "clock_update_flags",
+    "cpu",
+    "curr",
+    "has_blocked_load",
+    "idle",
+    "idle_stamp",
+    "last_blocked_load_update_tick",
+    "last_seen_need_resched_ns",
+    "leaf_cfs_rq_list",
+    "lost_idle_time",
+    "max_idle_balance_cost",
+    "next_balance",
+    "nohz_tick_stopped",
+    "nr_iowait",
+    "nr_numa_running",
+    "nr_preferred_running",
+    "nr_running",
+    "nr_switches",
+    "pd",
+    "prev_mm",
+    "push_busy",
+    "rd",
+    "sched_count",
+    "scratch_mask",
+    "sd",
+    "tmp_alone_branch",
+    "ttwu_pending"
+  ],
+  "clusters": [
+    {
+      "id": 11,
+      "members": [
+        "clock_pelt_idle",
+        "clock_idle",
+        "avg_rt",
+        "avg_dl",
+        "cfs_tasks",
+        "avg_irq",
+        "balance_callback",
+        "__lock",
+        "avg_idle",
+        "clock_task",
+        "clock",
+        "clock_pelt",
+        "cfs",
+        "clock_update_flags",
+        "cpu",
+        "curr",
+        "nr_running",
+        "lost_idle_time",
+        "nr_iowait",
+        "nr_preferred_running",
+        "leaf_cfs_rq_list",
+        "nr_numa_running",
+        "rd",
+        "ttwu_pending",
+        "idle_stamp",
+        "idle",
+        "prev_mm",
+        "sched_count",
+        "sd",
+        "has_blocked_load",
+        "last_seen_need_resched_ns",
+        "nohz_tick_stopped",
+        "nr_switches",
+        "pd",
+        "tmp_alone_branch",
+        "last_blocked_load_update_tick",
+        "max_idle_balance_cost",
+        "next_balance",
+        "push_busy",
+        "scratch_mask"
+      ],
+      "size": 40
+    }
+  ],
+  "top_pairs": [
+    {
+      "a": "clock_update_flags",
+      "b": "cpu",
+      "weight": 5280.0
+    },
+    {
+      "a": "cfs",
+      "b": "clock_update_flags",
+      "weight": 4752.0
+    },
+    {
+      "a": "clock_update_flags",
+      "b": "curr",
+      "weight": 3696.0
+    },
+    {
+      "a": "clock_pelt",
+      "b": "clock_update_flags",
+      "weight": 2904.0
+    },
+    {
+      "a": "cfs",
+      "b": "cpu",
+      "weight": 2880.0
+    },
+    {
+      "a": "clock_update_flags",
+      "b": "nr_running",
+      "weight": 2772.0
+    },
+    {
+      "a": "clock",
+      "b": "clock_update_flags",
+      "weight": 2640.0
+    },
+    {
+      "a": "cpu",
+      "b": "curr",
+      "weight": 2240.0
+    },
+    {
+      "a": "clock_update_flags",
+      "b": "lost_idle_time",
+      "weight": 2112.0
+    },
+    {
+      "a": "cfs",
+      "b": "curr",
+      "weight": 2016.0
+    },
+    {
+      "a": "clock_task",
+      "b": "clock_update_flags",
+      "weight": 1980.0
+    },
+    {
+      "a": "clock_pelt",
+      "b": "cpu",
+      "weight": 1760.0
+    },
+    {
+      "a": "cpu",
+      "b": "nr_running",
+      "weight": 1680.0
+    },
+    {
+      "a": "clock",
+      "b": "cpu",
+      "weight": 1600.0
+    },
+    {
+      "a": "cfs",
+      "b": "clock_pelt",
+      "weight": 1584.0
+    },
+    {
+      "a": "cfs",
+      "b": "nr_running",
+      "weight": 1512.0
+    },
+    {
+      "a": "cfs",
+      "b": "clock",
+      "weight": 1440.0
+    },
+    {
+      "a": "clock_update_flags",
+      "b": "nr_iowait",
+      "weight": 1320.0
+    },
+    {
+      "a": "cpu",
+      "b": "lost_idle_time",
+      "weight": 1280.0
+    },
+    {
+      "a": "clock_pelt",
+      "b": "curr",
+      "weight": 1232.0
+    },
+    {
+      "a": "clock_task",
+      "b": "cpu",
+      "weight": 1200.0
+    },
+    {
+      "a": "avg_idle",
+      "b": "clock_update_flags",
+      "weight": 1188.0
+    },
+    {
+      "a": "curr",
+      "b": "nr_running",
+      "weight": 1176.0
+    },
+    {
+      "a": "cfs",
+      "b": "lost_idle_time",
+      "weight": 1152.0
+    },
+    {
+      "a": "clock",
+      "b": "curr",
+      "weight": 1120.0
+    },
+    {
+      "a": "cfs",
+      "b": "clock_task",
+      "weight": 1080.0
+    },
+    {
+      "a": "clock_update_flags",
+      "b": "nr_preferred_running",
+      "weight": 1056.0
+    },
+    {
+      "a": "clock_pelt",
+      "b": "nr_running",
+      "weight": 924.0
+    },
+    {
+      "a": "curr",
+      "b": "lost_idle_time",
+      "weight": 896.0
+    },
+    {
+      "a": "clock",
+      "b": "clock_pelt",
+      "weight": 880.0
+    }
+  ],
+  "field_strength": [
+    {
+      "field": "clock_update_flags",
+      "strength": 41580.0
+    },
+    {
+      "field": "cpu",
+      "strength": 27280.0
+    },
+    {
+      "field": "cfs",
+      "strength": 24840.0
+    },
+    {
+      "field": "curr",
+      "strength": 19768.0
+    },
+    {
+      "field": "clock_pelt",
+      "strength": 15796.0
+    },
+    {
+      "field": "nr_running",
+      "strength": 15120.0
+    },
+    {
+      "field": "clock",
+      "strength": 14440.0
+    },
+    {
+      "field": "lost_idle_time",
+      "strength": 11680.0
+    },
+    {
+      "field": "clock_task",
+      "strength": 10980.0
+    },
+    {
+      "field": "nr_iowait",
+      "strength": 7420.0
+    },
+    {
+      "field": "avg_idle",
+      "strength": 6696.0
+    },
+    {
+      "field": "nr_preferred_running",
+      "strength": 5968.0
+    },
+    {
+      "field": "__lock",
+      "strength": 4500.0
+    },
+    {
+      "field": "balance_callback",
+      "strength": 4500.0
+    },
+    {
+      "field": "leaf_cfs_rq_list",
+      "strength": 4500.0
+    },
+    {
+      "field": "nr_numa_running",
+      "strength": 4500.0
+    },
+    {
+      "field": "rd",
+      "strength": 4500.0
+    },
+    {
+      "field": "ttwu_pending",
+      "strength": 4500.0
+    },
+    {
+      "field": "idle_stamp",
+      "strength": 3760.0
+    },
+    {
+      "field": "avg_irq",
+      "strength": 3016.0
+    },
+    {
+      "field": "cfs_tasks",
+      "strength": 3016.0
+    },
+    {
+      "field": "idle",
+      "strength": 3016.0
+    },
+    {
+      "field": "prev_mm",
+      "strength": 3016.0
+    },
+    {
+      "field": "avg_dl",
+      "strength": 2268.0
+    },
+    {
+      "field": "avg_rt",
+      "strength": 2268.0
+    },
+    {
+      "field": "sched_count",
+      "strength": 2268.0
+    },
+    {
+      "field": "sd",
+      "strength": 2268.0
+    },
+    {
+      "field": "clock_idle",
+      "strength": 1516.0
+    },
+    {
+      "field": "clock_pelt_idle",
+      "strength": 1516.0
+    },
+    {
+      "field": "has_blocked_load",
+      "strength": 1516.0
+    },
+    {
+      "field": "last_seen_need_resched_ns",
+      "strength": 1516.0
+    },
+    {
+      "field": "nohz_tick_stopped",
+      "strength": 1516.0
+    },
+    {
+      "field": "nr_switches",
+      "strength": 1516.0
+    },
+    {
+      "field": "pd",
+      "strength": 1516.0
+    },
+    {
+      "field": "tmp_alone_branch",
+      "strength": 1516.0
+    },
+    {
+      "field": "last_blocked_load_update_tick",
+      "strength": 760.0
+    },
+    {
+      "field": "max_idle_balance_cost",
+      "strength": 760.0
+    },
+    {
+      "field": "next_balance",
+      "strength": 760.0
+    },
+    {
+      "field": "push_busy",
+      "strength": 760.0
+    },
+    {
+      "field": "scratch_mask",
+      "strength": 760.0
+    }
+  ],
+  "intercluster_links": [],
+  "cluster_cohesion": [
+    {
+      "cluster_id": 11,
+      "size": 40,
+      "intra_sum": 134696.0,
+      "density": 172.6871794871795
+    }
+  ],
+  "per_field_top_partners": {
+    "__lock": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ],
+    "avg_dl": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 396.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 240.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 216.0
+      },
+      {
+        "partner": "curr",
+        "weight": 168.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 132.0
+      }
+    ],
+    "avg_idle": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 1188.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 720.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 648.0
+      },
+      {
+        "partner": "curr",
+        "weight": 504.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 396.0
+      }
+    ],
+    "avg_irq": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 528.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 320.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 288.0
+      },
+      {
+        "partner": "curr",
+        "weight": 224.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 176.0
+      }
+    ],
+    "avg_rt": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 396.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 240.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 216.0
+      },
+      {
+        "partner": "curr",
+        "weight": 168.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 132.0
+      }
+    ],
+    "balance_callback": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ],
+    "cfs": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 4752.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 2880.0
+      },
+      {
+        "partner": "curr",
+        "weight": 2016.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 1584.0
+      },
+      {
+        "partner": "nr_running",
+        "weight": 1512.0
+      }
+    ],
+    "cfs_tasks": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 528.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 320.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 288.0
+      },
+      {
+        "partner": "curr",
+        "weight": 224.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 176.0
+      }
+    ],
+    "clock": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 2640.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 1600.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 1440.0
+      },
+      {
+        "partner": "curr",
+        "weight": 1120.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 880.0
+      }
+    ],
+    "clock_idle": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "clock_pelt": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 2904.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 1760.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 1584.0
+      },
+      {
+        "partner": "curr",
+        "weight": 1232.0
+      },
+      {
+        "partner": "nr_running",
+        "weight": 924.0
+      }
+    ],
+    "clock_pelt_idle": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "clock_task": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 1980.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 1200.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 1080.0
+      },
+      {
+        "partner": "curr",
+        "weight": 840.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 660.0
+      }
+    ],
+    "clock_update_flags": [
+      {
+        "partner": "cpu",
+        "weight": 5280.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 4752.0
+      },
+      {
+        "partner": "curr",
+        "weight": 3696.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 2904.0
+      },
+      {
+        "partner": "nr_running",
+        "weight": 2772.0
+      }
+    ],
+    "cpu": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 5280.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 2880.0
+      },
+      {
+        "partner": "curr",
+        "weight": 2240.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 1760.0
+      },
+      {
+        "partner": "nr_running",
+        "weight": 1680.0
+      }
+    ],
+    "curr": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 3696.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 2240.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 2016.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 1232.0
+      },
+      {
+        "partner": "nr_running",
+        "weight": 1176.0
+      }
+    ],
+    "has_blocked_load": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "idle": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 528.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 320.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 288.0
+      },
+      {
+        "partner": "curr",
+        "weight": 224.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 176.0
+      }
+    ],
+    "idle_stamp": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 660.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 400.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 360.0
+      },
+      {
+        "partner": "curr",
+        "weight": 280.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 220.0
+      }
+    ],
+    "last_blocked_load_update_tick": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 132.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 80.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 72.0
+      },
+      {
+        "partner": "curr",
+        "weight": 56.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 44.0
+      }
+    ],
+    "last_seen_need_resched_ns": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "leaf_cfs_rq_list": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ],
+    "lost_idle_time": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 2112.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 1280.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 1152.0
+      },
+      {
+        "partner": "curr",
+        "weight": 896.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 704.0
+      }
+    ],
+    "max_idle_balance_cost": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 132.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 80.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 72.0
+      },
+      {
+        "partner": "curr",
+        "weight": 56.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 44.0
+      }
+    ],
+    "next_balance": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 132.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 80.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 72.0
+      },
+      {
+        "partner": "curr",
+        "weight": 56.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 44.0
+      }
+    ],
+    "nohz_tick_stopped": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "nr_iowait": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 1320.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 800.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 720.0
+      },
+      {
+        "partner": "curr",
+        "weight": 560.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 440.0
+      }
+    ],
+    "nr_numa_running": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ],
+    "nr_preferred_running": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 1056.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 640.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 576.0
+      },
+      {
+        "partner": "curr",
+        "weight": 448.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 352.0
+      }
+    ],
+    "nr_running": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 2772.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 1680.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 1512.0
+      },
+      {
+        "partner": "curr",
+        "weight": 1176.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 924.0
+      }
+    ],
+    "nr_switches": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "pd": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "prev_mm": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 528.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 320.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 288.0
+      },
+      {
+        "partner": "curr",
+        "weight": 224.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 176.0
+      }
+    ],
+    "push_busy": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 132.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 80.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 72.0
+      },
+      {
+        "partner": "curr",
+        "weight": 56.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 44.0
+      }
+    ],
+    "rd": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ],
+    "sched_count": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 396.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 240.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 216.0
+      },
+      {
+        "partner": "curr",
+        "weight": 168.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 132.0
+      }
+    ],
+    "scratch_mask": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 132.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 80.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 72.0
+      },
+      {
+        "partner": "curr",
+        "weight": 56.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 44.0
+      }
+    ],
+    "sd": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 396.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 240.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 216.0
+      },
+      {
+        "partner": "curr",
+        "weight": 168.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 132.0
+      }
+    ],
+    "tmp_alone_branch": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 264.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 160.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 144.0
+      },
+      {
+        "partner": "curr",
+        "weight": 112.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 88.0
+      }
+    ],
+    "ttwu_pending": [
+      {
+        "partner": "clock_update_flags",
+        "weight": 792.0
+      },
+      {
+        "partner": "cpu",
+        "weight": 480.0
+      },
+      {
+        "partner": "cfs",
+        "weight": 432.0
+      },
+      {
+        "partner": "curr",
+        "weight": 336.0
+      },
+      {
+        "partner": "clock_pelt",
+        "weight": 264.0
+      }
+    ]
+  },
+  "graph_stats": {
+    "num_fields": 40,
+    "num_edges_nonzero": 780,
+    "total_weight": 134696.0,
+    "sparsity": 0.0
+  }
+}

@@ -1,0 +1,126 @@
+Reordered Fields (suggested layout)
+__lock, avg_dl, avg_idle, avg_irq, avg_rt, balance_callback, cfs, cfs_tasks, clock, clock_idle, clock_pelt, clock_pelt_idle, clock_task, clock_update_flags, cpu, curr, has_blocked_load, idle, idle_stamp, last_blocked_load_update_tick, last_seen_need_resched_ns, leaf_cfs_rq_list, lost_idle_time, max_idle_balance_cost, next_balance, nohz_tick_stopped, nr_iowait, nr_numa_running, nr_preferred_running, nr_running, nr_switches, pd, prev_mm, push_busy, rd, sched_count, scratch_mask, sd, tmp_alone_branch, ttwu_pending
+
+Clusters (order reflects merge sequence; for reference)
+Cluster 11: clock_pelt_idle, clock_idle, avg_rt, avg_dl, cfs_tasks, avg_irq, balance_callback, __lock, avg_idle, clock_task, clock, clock_pelt, cfs, clock_update_flags, cpu, curr, nr_running, lost_idle_time, nr_iowait, nr_preferred_running, leaf_cfs_rq_list, nr_numa_running, rd, ttwu_pending, idle_stamp, idle, prev_mm, sched_count, sd, has_blocked_load, last_seen_need_resched_ns, nohz_tick_stopped, nr_switches, pd, tmp_alone_branch, last_blocked_load_update_tick, max_idle_balance_cost, next_balance, push_busy, scratch_mask
+
+Top Field Pairs (by co-access weight)
+clock_update_flags <> cpu: 5280.0
+cfs <> clock_update_flags: 4752.0
+clock_update_flags <> curr: 3696.0
+clock_pelt <> clock_update_flags: 2904.0
+cfs <> cpu: 2880.0
+clock_update_flags <> nr_running: 2772.0
+clock <> clock_update_flags: 2640.0
+cpu <> curr: 2240.0
+clock_update_flags <> lost_idle_time: 2112.0
+cfs <> curr: 2016.0
+clock_task <> clock_update_flags: 1980.0
+clock_pelt <> cpu: 1760.0
+cpu <> nr_running: 1680.0
+clock <> cpu: 1600.0
+cfs <> clock_pelt: 1584.0
+cfs <> nr_running: 1512.0
+cfs <> clock: 1440.0
+clock_update_flags <> nr_iowait: 1320.0
+cpu <> lost_idle_time: 1280.0
+clock_pelt <> curr: 1232.0
+clock_task <> cpu: 1200.0
+avg_idle <> clock_update_flags: 1188.0
+curr <> nr_running: 1176.0
+cfs <> lost_idle_time: 1152.0
+clock <> curr: 1120.0
+cfs <> clock_task: 1080.0
+clock_update_flags <> nr_preferred_running: 1056.0
+clock_pelt <> nr_running: 924.0
+curr <> lost_idle_time: 896.0
+clock <> clock_pelt: 880.0
+
+Field Interaction Strength (descending)
+clock_update_flags: 41580.0
+cpu: 27280.0
+cfs: 24840.0
+curr: 19768.0
+clock_pelt: 15796.0
+nr_running: 15120.0
+clock: 14440.0
+lost_idle_time: 11680.0
+clock_task: 10980.0
+nr_iowait: 7420.0
+avg_idle: 6696.0
+nr_preferred_running: 5968.0
+__lock: 4500.0
+balance_callback: 4500.0
+leaf_cfs_rq_list: 4500.0
+nr_numa_running: 4500.0
+rd: 4500.0
+ttwu_pending: 4500.0
+idle_stamp: 3760.0
+avg_irq: 3016.0
+cfs_tasks: 3016.0
+idle: 3016.0
+prev_mm: 3016.0
+avg_dl: 2268.0
+avg_rt: 2268.0
+sched_count: 2268.0
+sd: 2268.0
+clock_idle: 1516.0
+clock_pelt_idle: 1516.0
+has_blocked_load: 1516.0
+last_seen_need_resched_ns: 1516.0
+nohz_tick_stopped: 1516.0
+nr_switches: 1516.0
+pd: 1516.0
+tmp_alone_branch: 1516.0
+last_blocked_load_update_tick: 760.0
+max_idle_balance_cost: 760.0
+next_balance: 760.0
+push_busy: 760.0
+scratch_mask: 760.0
+
+Strongest Inter-Cluster Links (max edge between clusters)
+
+Cluster Cohesion Metrics
+Cluster 11: size=40, intra_sum=134696.0, density=172.6871794871795
+
+Per-Field Top Partners
+__lock: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)
+avg_dl: clock_update_flags (396.0), cpu (240.0), cfs (216.0), curr (168.0), clock_pelt (132.0)
+avg_idle: clock_update_flags (1188.0), cpu (720.0), cfs (648.0), curr (504.0), clock_pelt (396.0)
+avg_irq: clock_update_flags (528.0), cpu (320.0), cfs (288.0), curr (224.0), clock_pelt (176.0)
+avg_rt: clock_update_flags (396.0), cpu (240.0), cfs (216.0), curr (168.0), clock_pelt (132.0)
+balance_callback: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)
+cfs: clock_update_flags (4752.0), cpu (2880.0), curr (2016.0), clock_pelt (1584.0), nr_running (1512.0)
+cfs_tasks: clock_update_flags (528.0), cpu (320.0), cfs (288.0), curr (224.0), clock_pelt (176.0)
+clock: clock_update_flags (2640.0), cpu (1600.0), cfs (1440.0), curr (1120.0), clock_pelt (880.0)
+clock_idle: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+clock_pelt: clock_update_flags (2904.0), cpu (1760.0), cfs (1584.0), curr (1232.0), nr_running (924.0)
+clock_pelt_idle: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+clock_task: clock_update_flags (1980.0), cpu (1200.0), cfs (1080.0), curr (840.0), clock_pelt (660.0)
+clock_update_flags: cpu (5280.0), cfs (4752.0), curr (3696.0), clock_pelt (2904.0), nr_running (2772.0)
+cpu: clock_update_flags (5280.0), cfs (2880.0), curr (2240.0), clock_pelt (1760.0), nr_running (1680.0)
+curr: clock_update_flags (3696.0), cpu (2240.0), cfs (2016.0), clock_pelt (1232.0), nr_running (1176.0)
+has_blocked_load: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+idle: clock_update_flags (528.0), cpu (320.0), cfs (288.0), curr (224.0), clock_pelt (176.0)
+idle_stamp: clock_update_flags (660.0), cpu (400.0), cfs (360.0), curr (280.0), clock_pelt (220.0)
+last_blocked_load_update_tick: clock_update_flags (132.0), cpu (80.0), cfs (72.0), curr (56.0), clock_pelt (44.0)
+last_seen_need_resched_ns: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+leaf_cfs_rq_list: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)
+lost_idle_time: clock_update_flags (2112.0), cpu (1280.0), cfs (1152.0), curr (896.0), clock_pelt (704.0)
+max_idle_balance_cost: clock_update_flags (132.0), cpu (80.0), cfs (72.0), curr (56.0), clock_pelt (44.0)
+next_balance: clock_update_flags (132.0), cpu (80.0), cfs (72.0), curr (56.0), clock_pelt (44.0)
+nohz_tick_stopped: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+nr_iowait: clock_update_flags (1320.0), cpu (800.0), cfs (720.0), curr (560.0), clock_pelt (440.0)
+nr_numa_running: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)
+nr_preferred_running: clock_update_flags (1056.0), cpu (640.0), cfs (576.0), curr (448.0), clock_pelt (352.0)
+nr_running: clock_update_flags (2772.0), cpu (1680.0), cfs (1512.0), curr (1176.0), clock_pelt (924.0)
+nr_switches: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+pd: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+prev_mm: clock_update_flags (528.0), cpu (320.0), cfs (288.0), curr (224.0), clock_pelt (176.0)
+push_busy: clock_update_flags (132.0), cpu (80.0), cfs (72.0), curr (56.0), clock_pelt (44.0)
+rd: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)
+sched_count: clock_update_flags (396.0), cpu (240.0), cfs (216.0), curr (168.0), clock_pelt (132.0)
+scratch_mask: clock_update_flags (132.0), cpu (80.0), cfs (72.0), curr (56.0), clock_pelt (44.0)
+sd: clock_update_flags (396.0), cpu (240.0), cfs (216.0), curr (168.0), clock_pelt (132.0)
+tmp_alone_branch: clock_update_flags (264.0), cpu (160.0), cfs (144.0), curr (112.0), clock_pelt (88.0)
+ttwu_pending: clock_update_flags (792.0), cpu (480.0), cfs (432.0), curr (336.0), clock_pelt (264.0)

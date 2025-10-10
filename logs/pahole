@@ -1,0 +1,155 @@
+struct rq {
+	raw_spinlock_t             __lock;               /*     0     4 */
+	unsigned int               nr_running;           /*     4     4 */
+	unsigned int               nr_numa_running;      /*     8     4 */
+	unsigned int               nr_preferred_running; /*    12     4 */
+	unsigned int               numa_migrate_on;      /*    16     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	long unsigned int          last_blocked_load_update_tick; /*    24     8 */
+	unsigned int               has_blocked_load;     /*    32     4 */
+
+	/* XXX 28 bytes hole, try to pack */
+
+	call_single_data_t         nohz_csd __attribute__((__aligned__(32))); /*    64    32 */
+	unsigned int               nohz_tick_stopped;    /*    96     4 */
+	atomic_t                   nohz_flags;           /*   100     4 */
+	unsigned int               ttwu_pending;         /*   104     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	u64                        nr_switches;          /*   112     8 */
+
+	/* XXX 8 bytes hole, try to pack */
+
+	/* --- cacheline 1 boundary (128 bytes) --- */
+	struct cfs_rq              cfs __attribute__((__aligned__(128))); /*   128   640 */
+
+	/* XXX last struct has 56 bytes of padding, 2 holes */
+
+	/* --- cacheline 6 boundary (768 bytes) --- */
+	struct rt_rq               rt;                   /*   768  1688 */
+
+	/* XXX last struct has 4 bytes of padding, 1 hole */
+
+	/* --- cacheline 19 boundary (2432 bytes) was 24 bytes ago --- */
+	struct dl_rq               dl;                   /*  2456   104 */
+
+	/* XXX last struct has 2 holes */
+
+	/* --- cacheline 20 boundary (2560 bytes) --- */
+	struct list_head           leaf_cfs_rq_list;     /*  2560    16 */
+	struct list_head *         tmp_alone_branch;     /*  2576     8 */
+	unsigned int               nr_uninterruptible;   /*  2584     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	struct task_struct *       curr;                 /*  2592     8 */
+	struct task_struct *       idle;                 /*  2600     8 */
+	struct task_struct *       stop;                 /*  2608     8 */
+	long unsigned int          next_balance;         /*  2616     8 */
+	struct mm_struct *         prev_mm;              /*  2624     8 */
+	unsigned int               clock_update_flags;   /*  2632     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	u64                        clock;                /*  2640     8 */
+
+	/* XXX 40 bytes hole, try to pack */
+
+	/* --- cacheline 21 boundary (2688 bytes) --- */
+	u64                        clock_task __attribute__((__aligned__(128))); /*  2688     8 */
+	u64                        clock_pelt;           /*  2696     8 */
+	long unsigned int          lost_idle_time;       /*  2704     8 */
+	u64                        clock_pelt_idle;      /*  2712     8 */
+	u64                        clock_idle;           /*  2720     8 */
+	atomic_t                   nr_iowait;            /*  2728     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	u64                        last_seen_need_resched_ns; /*  2736     8 */
+	int                        ticks_without_resched; /*  2744     4 */
+	int                        membarrier_state;     /*  2748     4 */
+	struct root_domain *       rd;                   /*  2752     8 */
+	struct sched_domain *      sd;                   /*  2760     8 */
+	long unsigned int          cpu_capacity;         /*  2768     8 */
+	struct balance_callback *  balance_callback;     /*  2776     8 */
+	unsigned char              nohz_idle_balance;    /*  2784     1 */
+	unsigned char              idle_balance;         /*  2785     1 */
+
+	/* XXX 6 bytes hole, try to pack */
+
+	long unsigned int          misfit_task_load;     /*  2792     8 */
+	int                        active_balance;       /*  2800     4 */
+	int                        push_cpu;             /*  2804     4 */
+	struct cpu_stop_work       active_balance_work;  /*  2808    48 */
+	/* --- cacheline 22 boundary (2816 bytes) was 40 bytes ago --- */
+	int                        cpu;                  /*  2856     4 */
+	int                        online;               /*  2860     4 */
+	struct list_head           cfs_tasks;            /*  2864    16 */
+
+	/* XXX 64 bytes hole, try to pack */
+
+	/* --- cacheline 23 boundary (2944 bytes) --- */
+	struct sched_avg           avg_rt __attribute__((__aligned__(128))); /*  2944   128 */
+
+	/* XXX last struct has 68 bytes of padding */
+
+	/* --- cacheline 24 boundary (3072 bytes) --- */
+	struct sched_avg           avg_dl;               /*  3072   128 */
+
+	/* XXX last struct has 68 bytes of padding */
+
+	/* --- cacheline 25 boundary (3200 bytes) --- */
+	struct sched_avg           avg_irq;              /*  3200   128 */
+
+	/* XXX last struct has 68 bytes of padding */
+
+	/* --- cacheline 26 boundary (3328 bytes) --- */
+	u64                        idle_stamp;           /*  3328     8 */
+	u64                        avg_idle;             /*  3336     8 */
+	u64                        max_idle_balance_cost; /*  3344     8 */
+	struct rcuwait             hotplug_wait;         /*  3352     8 */
+	u64                        prev_steal_time;      /*  3360     8 */
+	u64                        prev_steal_time_rq;   /*  3368     8 */
+	long unsigned int          calc_load_update;     /*  3376     8 */
+	long int                   calc_load_active;     /*  3384     8 */
+	call_single_data_t         hrtick_csd;           /*  3392    32 */
+	struct hrtimer             hrtick_timer;         /*  3424    64 */
+
+	/* XXX last struct has 4 bytes of padding */
+
+	/* --- cacheline 27 boundary (3456 bytes) was 32 bytes ago --- */
+	ktime_t                    hrtick_time;          /*  3488     8 */
+	struct sched_info          rq_sched_info;        /*  3496    32 */
+	long long unsigned int     rq_cpu_time;          /*  3528     8 */
+	unsigned int               yld_count;            /*  3536     4 */
+	unsigned int               sched_count;          /*  3540     4 */
+	unsigned int               sched_goidle;         /*  3544     4 */
+	unsigned int               ttwu_count;           /*  3548     4 */
+	unsigned int               ttwu_local;           /*  3552     4 */
+
+	/* XXX 4 bytes hole, try to pack */
+
+	struct cpuidle_state *     idle_state;           /*  3560     8 */
+	unsigned int               nr_pinned;            /*  3568     4 */
+	unsigned int               push_busy;            /*  3572     4 */
+	struct cpu_stop_work       push_work;            /*  3576    48 */
+	/* --- cacheline 28 boundary (3584 bytes) was 40 bytes ago --- */
+	cpumask_var_t              scratch_mask;         /*  3624   256 */
+
+	/* XXX 24 bytes hole, try to pack */
+
+	/* --- cacheline 30 boundary (3840 bytes) was 64 bytes ago --- */
+	call_single_data_t         cfsb_csd __attribute__((__aligned__(32))); /*  3904    32 */
+	struct list_head           cfsb_csd_list;        /*  3936    16 */
+
+	/* size: 3968, cachelines: 31, members: 75 */
+	/* sum members: 3758, holes: 12, sum holes: 194 */
+	/* padding: 16 */
+	/* member types with holes: 3, total: 5 */
+	/* paddings: 6, sum paddings: 268 */
+	/* forced alignments: 5, forced holes: 5, sum forced holes: 164 */
+} __attribute__((__aligned__(128)));
+
